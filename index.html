@@ -1,149 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Hexo - Node.js blog framework</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="/hexo/css/style.css">
-  <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-4910098-7']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Hexo : A fast, simple &amp; powerful blog framework, powered by Node.js." />
 
-</head>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-<body class="index">
-  <header id="header">
-  <div class="outer">
-    <div class="inner">
-      <h1 id="logo-wrap">
-        <a href="/hexo/" id="logo">Hexo</a>
-      </h1>
-      <nav id="main-nav">
-        <ul>
-          
-            <li class="main-nav-item">
-              <a href="/hexo/docs/" class="main-nav-link">Docs</a>
-            </li>
-          
-            <li class="main-nav-item">
-              <a href="https://github.com/tommy351/hexo/wiki/Plugins" class="main-nav-link">Plugins</a>
-            </li>
-          
-            <li class="main-nav-item">
-              <a href="https://github.com/tommy351/hexo/wiki/Themes" class="main-nav-link">Themes</a>
-            </li>
-          
-            <li class="main-nav-item">
-              <a href="https://github.com/tommy351/hexo" class="main-nav-link">Source</a>
-            </li>
-          
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-  <div id="banner" class="outer">
-  <div class="inner">
-    <h2 id="banner-title">A fast, simple &amp; powerful blog framework,<br>powered by Node.js.</h2>
-    <div id="banner-getting-started">
-      <span id="banner-getting-started-prefix">$</span>
-      <input id="banner-getting-started-input" type="text" value="npm install hexo -g" readonly="true">
-      <a href="/hexo/docs" id="banner-getting-started-btn">START!</a>
-    </div>
-    <div id="banner-share">
-      <!-- GitHub Star -->
-<iframe src="http://ghbtns.com/github-btn.html?user=tommy351&repo=hexo&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px" class="alignleft"></iframe>
-<!-- Tweet button -->
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://zespia.tw/hexo" data-text="Hexo - A fast, simple &amp; powerful blog framework powered by Node.js." data-hashtags="hexo,nodejs">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<!-- Facebook like button -->
-<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fzespia.tw%2Fhexo&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=145365378826124" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
-<!-- Google +1 button -->
-<g:plusone size="medium" href="http://zespia.tw/hexo"></g:plusone>
-    </div>
-  </div>
-</div>
+    <title>Hexo</title>
+  </head>
 
-<div class="intro-wrap">
-  <div class="outer">
-    <h2 class="intro-title">Features</h2>
-  </div>
-  <div class="outer">
-    <div class="intro-feature">
-      <h3 class="intro-feature-title">Blazing Fast</h3>
-      <p class="intro-feature-desc">Hexo is powered by Node.js and supports multi-thread generating. Hundreds of files take only seconds to generate.</p>
-    </div>
-    <div class="intro-feature">
-      <h3 class="intro-feature-title">Easy Write</h3>
-      <p class="intro-feature-desc">Hexo supports GitHub Flavored Markdown and all Octopress plugins and highly Jekyll/Octopress compatible.</p>
-    </div>
-    <div class="intro-feature">
-      <h3 class="intro-feature-title">Extensibility</h3>
-      <p class="intro-feature-desc">Hexo supports EJS, Swig &amp; Stylus. You can install more plugins for Haml, Jade, Less supports.</p>
-    </div>
-  </div>
-</div>
+  <body>
 
-<div class="intro-wrap">
-  <div class="outer">
-    <h2 class="intro-title">Quick Start</h2>
-  </div>
-  <div class="outer">
-    <div class="intro-quick-start">
-      <h3 class="intro-feature-title">1. Install</h3>
-      <p class="intro-feature-desc">
-        <figure class="highlight">
-          <pre><code>$ npm install hexo -g</code></pre>
-        </figure>
-      </p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/xiaoyi001yeye/hexo">View on GitHub</a>
+
+          <h1 id="project_title">Hexo</h1>
+          <h2 id="project_tagline">A fast, simple &amp; powerful blog framework, powered by Node.js.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/xiaoyi001yeye/hexo/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/xiaoyi001yeye/hexo/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
     </div>
-    <div class="intro-quick-start">
-      <h3 class="intro-feature-title">2. Setup</h3>
-      <p class="intro-feature-desc">
-        <figure class="highlight">
-          <pre><code>$ hexo init blog && cd blog</code></pre>
-        </figure>
-      </p>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="hexo" class="anchor" href="#hexo"><span class="octicon octicon-link"></span></a>Hexo</h1>
+
+<p><a href="https://travis-ci.org/tommy351/hexo"><img src="https://travis-ci.org/tommy351/hexo.png?branch=master" alt="Build Status"></a>  <a href="http://badge.fury.io/js/hexo"><img src="https://badge.fury.io/js/hexo.png" alt="NPM version"></a></p>
+
+<p>A fast, simple &amp; powerful blog framework, powered by <a href="http://nodejs.org">Node.js</a>.</p>
+
+<ul>
+<li><a href="http://zespia.tw/hexo/docs/">Docs</a></li>
+<li><a href="https://github.com/tommy351/hexo/wiki/Plugins">Plugins</a></li>
+<li><a href="https://github.com/tommy351/hexo/wiki/Themes">Themes</a></li>
+</ul><h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<h3>
+<a name="blazing-fast" class="anchor" href="#blazing-fast"><span class="octicon octicon-link"></span></a>Blazing Fast</h3>
+
+<p>Hexo is powered by Node.js and supports multi-thread generating. Hundreds of files take only seconds to generate.</p>
+
+<h3>
+<a name="easy-write" class="anchor" href="#easy-write"><span class="octicon octicon-link"></span></a>Easy Write</h3>
+
+<p>Hexo supports GitHub Flavored Markdown and all Octopress plugins and highly Jekyll/Octopress compatible.</p>
+
+<h3>
+<a name="extensibility" class="anchor" href="#extensibility"><span class="octicon octicon-link"></span></a>Extensibility</h3>
+
+<p>Hexo supports EJS, Swig &amp; Stylus. You can install more plugins for Haml, Jade, Less supports.</p>
+
+<h2>
+<a name="quick-start" class="anchor" href="#quick-start"><span class="octicon octicon-link"></span></a>Quick Start</h2>
+
+<p><strong>Install</strong></p>
+
+<pre><code>$ npm install hexo -g
+</code></pre>
+
+<p><strong>Update</strong></p>
+
+<pre><code>$ npm update hexo -g
+</code></pre>
+
+<p><strong>Setup</strong></p>
+
+<pre><code>$ hexo init blog &amp;&amp; cd blog
+</code></pre>
+
+<p><strong>Create a new post</strong></p>
+
+<pre><code>$ hexo new "Hello World"
+</code></pre>
+
+<p><strong>Generate</strong></p>
+
+<pre><code>$ hexo generate
+</code></pre>
+
+<p><strong>Server</strong></p>
+
+<pre><code>$ hexo server
+</code></pre>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>(The MIT License)</p>
+
+<p>Copyright (c) 2012 Tommy Chen</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/tommy351/hexo/trend.png" alt="Bitdeli Badge"></a></p>
+      </section>
     </div>
-    <div class="intro-quick-start">
-      <h3 class="intro-feature-title">3. Generate</h3>
-      <p class="intro-feature-desc">
-        <figure class="highlight">
-          <pre><code>$ hexo generate</code></pre>
-        </figure>
-      </p>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Hexo maintained by <a href="https://github.com/xiaoyi001yeye">xiaoyi001yeye</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
     </div>
-    <div class="intro-quick-start">
-      <h3 class="intro-feature-title">4. Server</h3>
-      <p class="intro-feature-desc">
-        <figure class="highlight">
-          <pre><code>$ hexo server</code></pre>
-        </figure>
-      </p>
-    </div>
-  </div>
-</div>
-  <footer id="footer">
-  <div class="outer">
-    <div class="inner">
-      &copy; 2013 <a href="http://zespia.tw">SkyArrow</a><br>
-      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
-    </div>
-  </div>
-</footer>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/hexo/js/script.js"></script>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-</body>
+
+    
+
+  </body>
 </html>
